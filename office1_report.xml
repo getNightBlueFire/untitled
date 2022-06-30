@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<office>
+    <test>office1</test>
+    <p1>
+        <products>
+            <count>100</count>
+            <name>test1</name>
+        </products>
+    </p1>
+    <p1>
+        <products>
+            <count>143</count>
+            <name>test2</name>
+        </products>
+    </p1>
+    <p1>
+        <products>
+            <count>134</count>
+            <name>test3</name>
+        </products>
+    </p1>
+</office>
