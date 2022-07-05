@@ -1,5 +1,18 @@
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
+
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
+    @XmlAttribute(name = "name")
     private String name;
+
+    @XmlElementWrapper(name = "lines")
+    @XmlElements(
+            @XmlElement(name = "line")
+    )
+    private List<String> quests = new ArrayList<>();
 
     public Product() {
     }
@@ -33,5 +46,13 @@ public class Product {
                 "name='" + name + '\'' +
                 ", count=" + count +
                 '}';
+    }
+
+    public List<String> getQuests() {
+        return quests;
+    }
+
+    public void setQuests(List<String> quests) {
+        this.quests = quests;
     }
 }

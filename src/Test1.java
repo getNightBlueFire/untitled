@@ -33,6 +33,8 @@ public class Test1 {
 //        }
 
             toXml();
+
+            //toObj();
     }
     public static void toXml() throws Exception {
         JAXBContext contextObj = JAXBContext.newInstance(Office.class);
@@ -50,6 +52,11 @@ public class Test1 {
 
     private static List<Office> getOffices() {
         Office office1 = new Office();
+        office1.setAuthor("dima");
+        office1.setType("TEST");
+        office1.getInts().add(1);
+        office1.getInts().add(2);
+        office1.getInts().add(3);
         Office office2 = new Office();
         Office office3 = new Office();
         Storage storage1 = new Storage();
@@ -62,8 +69,12 @@ public class Test1 {
         Product product3 = new Product("test3", 134);
         Product product4 = new Product("test4", 124);
         Product product5 = new Product("test5", 112);
-
+        product1.getQuests().add("SELECT");
+        product1.getQuests().add("UPDATE");
+        product1.getQuests().add("DELETE");
+        product1.getQuests().add("READ");
         storage1.getProducts().add(product1);
+        storage1.getProducts().add(new Product("test12",100));
         storage2.getProducts().add(product2);
         storage3.getProducts().add(product3);
         storage4.getProducts().add(product4);

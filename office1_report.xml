@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<office>
-    <test>office1</test>
-    <p1>
-        <products>
-            <count>100</count>
-            <name>test1</name>
-        </products>
-    </p1>
-    <p1>
-        <products>
-            <count>143</count>
-            <name>test2</name>
-        </products>
-    </p1>
-    <p1>
-        <products>
-            <count>134</count>
-            <name>test3</name>
-        </products>
-    </p1>
+<office name="office1">
+    <ints>1 2 3</ints>
+    <type>TEST</type>
+    <author>dima</author>
+    <storages>
+        <storage>
+            <products>
+                <product name="test1">
+                    <lines>
+                        <line>SELECT</line>
+                        <line>UPDATE</line>
+                        <line>DELETE</line>
+                        <line>READ</line>
+                    </lines>
+                    <count>100</count>
+                </product>
+                <product name="test12">
+                    <lines/>
+                    <count>100</count>
+                </product>
+            </products>
+        </storage>
+        <storage>
+            <products>
+                <product name="test2">
+                    <lines/>
+                    <count>143</count>
+                </product>
+            </products>
+        </storage>
+        <storage>
+            <products>
+                <product name="test3">
+                    <lines/>
+                    <count>134</count>
+                </product>
+            </products>
+        </storage>
+    </storages>
 </office>
